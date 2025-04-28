@@ -1,0 +1,77 @@
+<!DOCTYPE html>
+<html lang="pt-br">
+<head>
+    <!--Metadados-->
+    <meta charset="UTF-8">
+    <meta http-equiv="X-UA-Compatible" content="IE-edge">
+    <meta name="viewport" content="width=device-width, initial-scale=1.0">
+    <!--Topo-->
+    <link rel="shortcut icon" href="assets/images/favicon.ico" type="image/x-icon">
+    <title>Campanhas - APPA</title>
+    <!--Estilos-->
+    <link rel="stylesheet" href="css/style.css">
+    <!--Scripts-->
+    <script src="https://code.jquery.com/jquery-3.6.1.min.js" integrity="sha256-o88AwQnZB+VDvE9tvIXrMQaPlFFSUTR+nldQm1LuPXQ=" crossorigin="anonymous"></script>
+    <script src="js/contrast.js"></script>
+    <script src="js/font.js"></script>
+</head>
+<body>
+    <header class="flex-container"><!--Menu de acessibilidade-->
+        <ul class="links_access">
+            <li><a href="acessibility.html">Acessibilidade</a></li>
+            <li><a href="javascript:void(0);" id="with-contrast">Contraste</a></li>
+            <li><a href="javascript:void(0);" id="without-contrast">Sem contraste</a></li>
+            <li><a href="javascript:void(0);" id="increase">A+</a></li>
+            <li><a href="javascript:void(0);" id="decrease">A-</a></li>
+        </ul>
+    </header>
+    <nav class="flex-container"><!--Menu principal e de navegação-->
+        <label for="bt_menu"><img src="assets/images/menu.png" alt="Menu"></label>
+        <input type="checkbox" name="bt_menu" id="bt_menu">
+        <a href="index.html"><img id="logo" src="assets/images/logo.png" alt="Logo da APPA"></a>
+        <ul class="pages">
+            <li><a href="index.html">Sobre nós</a></li>
+            <li><a href="campaigns.html">Campanhas</a></li>
+            <li><a href="join.html">Junte-se a causa</a></li>
+            <li><a href="partners.html">Parceiros</a></li>
+            <li><a href="contact.html">Contato</a></li>
+        </ul>
+    </nav>
+    <main class="flex-container"><!--Conteúdo da página-->
+        <div id="text">
+            <h1>Campanhas</h1>
+            <div class="flex-container" id="campaigns">
+                <fieldset class="flat-container" id="block1">
+                    <img class="image" src="assets/images/basic-food-parcel.png" alt="Cestas básicas">
+                    <h1>Cesta básica</h1>
+                    <p>As cestas básicas são a nossa principal campanha e são distribuídas durante todo o ano.</p>
+                    <button type="submit">Inscrever-se</button>
+                </fieldset>
+                <fieldset class="flat-container" id="block2">
+                    <img class="image" src="assets/images/christmas-gift.png" alt="Presentes de natal">
+                    <h1>Sacolinha de natal</h1>
+                    <p>As sacolinhas de natal são a nossa campanha especial para trazer um pouco mais de alegria a quem tanto precisa.</p>
+                    <button type="submit">Inscrever-se</button>
+                </fieldset>
+            </div>
+        </div>
+    </main>
+    <footer class="flex-container"><!--Rodapé-->
+        <p>&copy; 2022 APPA</p>
+    </footer>
+    <div class="fab-container"><!--Botão de ação flutuante-->
+        <button class="rounded-button" ></button>
+        <fieldset class="flat-container"></fieldset>
+    </div>
+    <div vw class="enabled">
+        <div vw-access-button class="active"></div>
+        <div vw-plugin-wrapper>
+            <div class="vw-plugin-top-wrapper"></div>
+        </div>
+    </div>
+    <script src="https://vlibras.gov.br/app/vlibras-plugin.js"></script>
+    <script>
+        new window.VLibras.Widget('https://vlibras.gov.br/app');
+    </script>
+</body>
+</html>
